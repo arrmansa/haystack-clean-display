@@ -13,7 +13,7 @@ encoded_code = base64.a85encode(compressed_code).decode("ascii")
 
 # Construct the command
 to_exec = (
-    'import gzip, base64;'
+    'import gzip,base64;'
     'exec(gzip.decompress(base64.a85decode(' + json.dumps(encoded_code) + ')).decode("ascii"))'
 )
 

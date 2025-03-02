@@ -10,6 +10,7 @@ import re
 import time
 import socket
 
+pyautogui.FAILSAFE = False
 
 def make_dataframe(clipboard_string):
     def parse_single_line(x):
