@@ -1,0 +1,9 @@
+pandas
+pyautogui
+pynput
+py2app
+pyright
+ruff
+black
+python-minifier
+setuptools==70.3.0
