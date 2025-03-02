@@ -181,7 +181,7 @@ def main_loop():
             if cmd_pressed and c_pressed:
                 cmd_pressed, c_pressed = monitor_cmd_and_c(event, cmd_pressed, c_pressed)
                 if not (cmd_pressed and c_pressed):
-                    time.sleep(0.1)  # Clipboard Update Time of 0.5 seconds
+                    time.sleep(0.1)  # Clipboard Update Time of 0.1 seconds
                     data = clipboard_get()
                     if isinstance(data, str) and data.startswith("Haystack logo"):  # Check for required data
                         df = make_dataframe(data)
